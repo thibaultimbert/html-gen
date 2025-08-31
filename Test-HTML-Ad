@@ -128,7 +128,7 @@
 
       <div class="product">
         <!-- Replace src with your image path or URL -->
-        <img src="product.jpg" alt="Featured product" />
+        <img src="chair.png" alt="Featured product" />
       </div>
 
       <div class="footer">

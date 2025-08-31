@@ -100,7 +100,8 @@
       max-height:80%;
       object-fit:contain;
       filter: drop-shadow(0 38px 40px rgba(0,0,0,0.25));
-      animation: fadeIn 0.8s ease-out both 0.75s;
+      will-change: transform, opacity;
+      animation: slideInRightFade 0.9s cubic-bezier(0.22, 1, 0.36, 1) both 0.6s;
     }
 
     /* Round CTA button bottom-left */
@@ -131,6 +132,10 @@
     @keyframes fadeInUp {
       from { opacity:0; transform: translateY(12px); }
       to { opacity:1; transform: translateY(0); }
+    }
+    @keyframes slideInRightFade {
+      from { opacity:0; transform: translateX(48px); }
+      to { opacity:1; transform: translateX(0); }
     }
 
     /* Optional preview scaling */
