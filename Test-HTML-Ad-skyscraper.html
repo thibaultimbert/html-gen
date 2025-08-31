@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Promo Ad — Skyscraper 160x600</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --yellow:#FFC300;
+      --black:#000000;
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:#eaeaea;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:16px;
+    }
+
+    /* Ad canvas: 160x600 wide skyscraper */
+    .ad{
+      position:relative;
+      width:160px;
+      height:600px;
+      background:var(--yellow);
+      overflow:hidden;
+    }
+
+    /* Headline */
+    .headline{
+      position:absolute;
+      top:12px;
+      left:10px;
+      right:10px;
+      color:var(--black);
+      font-weight:900;
+      font-size:28px;
+      line-height:0.9;
+      letter-spacing:-0.5px;
+      text-transform:uppercase;
+    }
+
+    /* Discount badge */
+    .badge{
+      position:absolute;
+      top:138px;
+      right:8px;
+      width:72px;
+      height:72px;
+      border-radius:50%;
+      background:var(--white);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:var(--black);
+      font-weight:900;
+      line-height:1;
+    }
+    .badge .percent{font-size:20px}
+    .badge .off{font-size:18px}
+
+    /* Product image area */
+    .product{
+      position:absolute;
+      left:8px;
+      right:8px;
+      top:220px;
+      bottom:120px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .product img{
+      max-width:100%;
+      max-height:100%;
+      object-fit:contain;
+      filter: drop-shadow(0 18px 16px rgba(0,0,0,0.25));
+    }
+
+    /* Footer */
+    .footer{
+      position:absolute;
+      left:10px;
+      right:10px;
+      bottom:12px;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      align-items:center;
+    }
+    .brand{
+      color:var(--black);
+      font-weight:900;
+      font-size:20px;
+      letter-spacing:-0.2px;
+    }
+    .cta{
+      width:100%;
+      text-align:center;
+      background:var(--black);
+      color:var(--white);
+      font-weight:800;
+      font-size:14px;
+      padding:10px 14px;
+      border-radius:999px;
+      text-decoration:none;
+    }
+
+    /* Optional: high-DPI preview scaling on narrow screens */
+    @media (max-width:400px){
+      .ad{transform:scale(1.5); transform-origin:top center}
+    }
+  </style>
+  <!-- End styles -->
+</head>
+<body>
+  <section class="ad" role="img" aria-label="Promotional ad with discount and product">
+    <h1 class="headline">SPORT<br/>SHOES</h1>
+
+    <div class="badge" aria-hidden="true">
+      <div>
+        <div class="percent">10%</div>
+        <div class="off">OFF</div>
+      </div>
+    </div>
+
+    <div class="product">
+      <!-- Replace src with your image path or URL -->
+      <img src="product.webp" alt="Featured product" />
+    </div>
+
+    <div class="footer">
+      <div class="brand">ON<span style="margin:0 6px">•</span>STORE</div>
+      <a class="cta" href="#" aria-label="Get yours">Get yours</a>
+    </div>
+  </section>
+</body>
+</html>
+
+
+
